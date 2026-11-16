@@ -479,6 +479,11 @@ body.slide-open .ctab,body.slide-open .a11y,body.slide-open .totop{opacity:0;poi
   .fgrid{gap:28px;padding-top:50px}
 }
 
+
+.fmark{display:inline-flex;flex-direction:column;align-items:center;gap:10px;width:fit-content;direction:ltr}
+.fm-luna{font-weight:300;font-size:24px;letter-spacing:.62em;padding-left:.62em;color:var(--tx);line-height:1}
+.fm-sc{font-weight:600;font-size:10.5px;letter-spacing:.3em;padding-left:.3em;text-transform:uppercase;color:var(--mu);line-height:1}
+
 /* contact tab */
 .ctab{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:45;display:flex;flex-direction:column;align-items:center;gap:8px;padding:16px 10px;background:var(--gold);color:#1B2029;text-decoration:none;font-size:12.5px;font-weight:600;letter-spacing:.06em;writing-mode:vertical-rl;transition:background .3s,padding .3s}
 .ctab svg{writing-mode:horizontal-tb}
@@ -710,8 +715,7 @@ html.a-motion .reveal{opacity:1;transform:none}
 <footer id="footer">
   <div class="wrap fgrid">
     <div class="fcol fabout">
-      <span class="wordmark" style="font-size:20px">LUNA</span>
-      <span class="eyebrow" style="display:block;margin-top:8px">Strategic Communications</span>
+      <span class="fmark"><span class="fm-luna">LUNA</span><span class="fm-sc">Strategic Communications</span></span>
       <p>לונה הוא משרד אסטרטגיה שמלווה חברות וארגונים בגיוס משאבים, סטוריטלינג וסושיאל ובניהול תקשורת בעת משבר.</p>
     </div>
     <div class="fcol">
