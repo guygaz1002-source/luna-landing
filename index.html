@@ -251,6 +251,15 @@ h2.display{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;font-
 .svc-sec .slide-x:hover{border-color:var(--acc)}
 @media (max-width:760px){.svc-sec .slide-body ul{grid-template-columns:1fr}.svc-sec .slide{padding:58px 22px 30px}}
 
+
+/* office photo behind the services, sunk deep into black */
+.svc-sec{overflow:clip}
+.svc-sec::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:url(office-bg.jpg) center 40%/cover no-repeat;opacity:.16;filter:grayscale(.25) contrast(1.05)}
+.svc-sec::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:
+  linear-gradient(180deg,rgba(14,14,17,.92) 0%,rgba(14,14,17,.35) 22%,rgba(14,14,17,.35) 78%,rgba(14,14,17,.92) 100%),
+  linear-gradient(270deg,rgba(14,14,17,.55) 0%,rgba(14,14,17,.15) 50%,rgba(14,14,17,.55) 100%)}
+.svc-sec > .wrap{position:relative;z-index:1}
+
 /* team */
 .gallery{margin-top:64px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
 .tile{display:block;text-decoration:none;color:var(--tx);cursor:pointer}
